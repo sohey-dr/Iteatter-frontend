@@ -1,8 +1,8 @@
 <template>
  <div class="page">
    <ul>
-     <li v-for="post in posts" :key=post.id>
-        {{ post.title }}
+     <li v-for="post in posts" :key="post.ID">
+        {{ post.Title }}
      </li>
    </ul>
  </div>
@@ -18,7 +18,7 @@ export default {
    }
  },
  mounted () {
-   axios.get('https://jsonplaceholder.typicode.com/posts')
+   axios.get('http://917f02cb43ed.ngrok.io/api/')
      .then((response) => this.posts = response.data)
  }
 }
