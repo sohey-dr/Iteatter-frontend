@@ -1,7 +1,7 @@
 <template>
- <div class="page">
-   {{ posts.Title }}
-   
+ <div class="page mt-5 text-center">
+   <h3>{{ post.Title }}</h3>
+   <p>{{ post.Body }}</p>
  </div>
 </template>
 
@@ -11,12 +11,12 @@ import axios from 'axios'
 export default {
  data () {
    return {
-     posts: [],
+     post: [],
    }
  },
  mounted () {
    axios.get('http://917f02cb43ed.ngrok.io/api/' + this.$route.params.id)
-     .then((response) => this.posts = response.data)
+     .then((response) => this.post = response.data)
  }
 }
 </script>
