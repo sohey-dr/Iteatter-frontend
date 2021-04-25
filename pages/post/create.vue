@@ -16,14 +16,13 @@ import axios from 'axios'
 export default {
  data () {
    return {
-    valid: false,
      title: [],
      body: []
    }
  },
  methods: {
   post() {
-    axios.post("https://e5cb686bbb44.ngrok.io", {
+    axios.post(BACK_URL, {
       Title: this.title,
       Body: this.body
     })
