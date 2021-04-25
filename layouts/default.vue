@@ -1,12 +1,25 @@
 <template>
   <div>
+    <Header />
     <nuxt/>
+    <Footer />
   </div>
 </template>
 
+<script>
+import Header from "~/components/header"
+import Footer from "~/components/footer"
+export default {
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -14,6 +27,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: #212020;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
 
 *, *:before, *:after {
