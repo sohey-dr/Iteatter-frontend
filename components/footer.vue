@@ -1,8 +1,8 @@
 <template>
   <footer class="footer">
-    <!-- <div class="container">
+    <div class="container">
       <p class="footer-text">mitei </p>
-    </div> -->
+    </div>
   </footer>
 </template>
 
