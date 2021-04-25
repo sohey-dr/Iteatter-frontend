@@ -1,10 +1,8 @@
 <template>
- <div class="page">
-   <ul>
-     <li v-for="post in posts" :key="post.ID">
-        {{ post.Title }}
-     </li>
-   </ul>
+ <div class="page mt-3">
+    <div class="text-center mb-5" v-for="post in posts" :key="post.ID">
+      <nuxt-link :to="`/post/${post.ID}`">{{ post.Title }}</nuxt-link>
+    </div>
  </div>
 </template>
 
@@ -23,3 +21,6 @@ export default {
  }
 }
 </script>
+
+<style>
+</style>
