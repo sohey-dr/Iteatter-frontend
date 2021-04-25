@@ -22,7 +22,7 @@ export default {
  },
  methods: {
   post() {
-    axios.post(BACK_URL, {
+    axios.post(process.env.BACK_URL, {
       Title: this.title,
       Body: this.body
     })
