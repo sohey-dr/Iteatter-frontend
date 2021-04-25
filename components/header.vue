@@ -2,7 +2,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="">Iteatter</a>
+        <nuxt-link class="navbar-brand" to="/">Iteatter</nuxt-link>
       </div>
     </div>
   </nav>
