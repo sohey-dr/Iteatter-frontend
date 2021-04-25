@@ -23,7 +23,7 @@ export default {
  },
  methods: {
   post() {
-    axios.post('http://917f02cb43ed.ngrok.io/api/', {
+    axios.post("https://e5cb686bbb44.ngrok.io", {
       Title: this.title,
       Body: this.body
     })

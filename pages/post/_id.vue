@@ -15,7 +15,7 @@ export default {
    }
  },
  mounted () {
-   axios.get('http://917f02cb43ed.ngrok.io/api/' + this.$route.params.id)
+   axios.get(process.env.BACK_URL + this.$route.params.id)
      .then((response) => this.post = response.data)
  }
 }

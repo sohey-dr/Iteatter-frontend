@@ -16,7 +16,7 @@ export default {
    }
  },
  mounted () {
-   axios.get('http://917f02cb43ed.ngrok.io/api/')
+   axios.get(process.env.BACK_URL)
      .then((response) => this.posts = response.data)
  }
 }

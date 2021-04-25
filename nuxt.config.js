@@ -1,3 +1,6 @@
+require('dotenv').config();
+const {BACK_URL} = process.env;
+
 module.exports = {
   /*
   ** Headers of the page
@@ -40,5 +43,8 @@ module.exports = {
     'bootstrap-vue/nuxt'
   ],
   axios: {
+  },
+  env:{
+    BACK_URL
   }
 }
