@@ -1,4 +1,4 @@
-# mitei
+# iteatter-frontend
 
 > Nuxt.js project
 
