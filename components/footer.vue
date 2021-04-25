@@ -1,17 +1,19 @@
 <template>
   <footer class="footer">
-    <div class="container">
+    <!-- <div class="container">
       <p class="footer-text">mitei </p>
-    </div>
+    </div> -->
   </footer>
 </template>
 
-<style scoped>
-footer{
-  position: absolute;/*←絶対位置*/
-  bottom: 0; /*下に固定*/
+<style>
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: #6b6767;
   width: 100%;
+  height: 30px;
 }
 .container {
   width: auto;
