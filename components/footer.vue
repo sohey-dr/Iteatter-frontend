@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <p class="text-muted">mitei </p>
+      <p class="footer-text">mitei </p>
     </div>
   </footer>
 </template>
@@ -10,7 +10,7 @@
 footer{
   position: absolute;/*←絶対位置*/
   bottom: 0; /*下に固定*/
-  background-color: #3e3e3e;
+  background-color: #6b6767;
   width: 100%;
 }
 .container {
@@ -20,5 +20,8 @@ footer{
 }
 .container {
   margin: 20px 0;
+}
+.footer-text {
+  color: #928f87;
 }
 </style>
